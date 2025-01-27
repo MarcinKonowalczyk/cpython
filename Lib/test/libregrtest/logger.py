@@ -33,9 +33,8 @@ class Logger:
 
         mins, secs = divmod(int(log_time), 60)
         hours, mins = divmod(mins, 60)
-        formatted_log_time = f"{hours}:{mins:02d}:{secs:02d} "
 
-        line = f"{formatted_log_time} {line}"
+        line = f"{hours}:{mins:02d}:{secs:02d} {line}"
         if empty:
             line = line[:-1]
 
